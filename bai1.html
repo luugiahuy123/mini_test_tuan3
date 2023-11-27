@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function factorial(number) {
+        let sum = 1
+        for (let i = 1; i <= number; i++) {
+            sum *= i;
+        }
+        return sum;
+    }
+
+    let num = +parseInt(prompt("nhap so nguyen duong"))
+    let result = factorial(num);
+    document.write(result + " giai thua cua " + num);
+</script>
+</body>
+</html>

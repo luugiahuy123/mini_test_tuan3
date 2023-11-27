@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function divisible(number) {
+        let count = 0;
+        let i = number;
+        while (count < 15) {
+            if (i % 3 == 0) {
+                document.write(i + "<br>")
+                count++;
+            }
+            i++;
+        }
+        return i;
+    }
+
+    let num = +parseInt(prompt("nhap"));
+    divisible(num);
+</script>
+</body>
+</html>
