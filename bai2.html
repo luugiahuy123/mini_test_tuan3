@@ -6,21 +6,24 @@
 </head>
 <body>
 <script>
-    function divisible(number) {
+    function divisible(star, stop) {
         let count = 0;
-        let i = number;
-        while (count < 15) {
+        let i = star;
+        let arr1 = [];
+        while (count < stop) {
             if (i % 3 == 0) {
-                document.write(i + "<br>")
+                arr1.push(i);
                 count++;
             }
             i++;
         }
-        return i;
+        return arr1;
     }
 
-    let num = +parseInt(prompt("nhap"));
-    divisible(num);
+    let star1 = +parseInt(prompt("nhap"));
+    let stop1 = 15
+    let result = divisible(star1, stop1);
+    document.write(result);
 </script>
 </body>
 </html>

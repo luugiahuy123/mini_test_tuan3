@@ -11,10 +11,15 @@
         for (let i = 1; i <= number; i++) {
             sum *= i;
         }
+
         return sum;
     }
 
-    let num = +parseInt(prompt("nhap so nguyen duong"))
+    let num = +prompt("nhap so nguyen duong");
+    while (num < 0) {
+        alert("nhap sai nhap lai")
+        num = +prompt("nhap lai")
+    }
     let result = factorial(num);
     document.write(result + " giai thua cua " + num);
 </script>
